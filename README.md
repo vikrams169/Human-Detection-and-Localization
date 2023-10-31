@@ -4,10 +4,10 @@
 [![codecov](https://codecov.io/gh/vikrams169/Human-Detection-and-Localization/graph/badge.svg?token=QB2Q1sa4sK)](https://codecov.io/gh/vikrams169/Human-Detection-and-Localization)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**HDAL**: A robust perception stack for delivery robots to navigate sidewalks by detecting, localizing, and tracking the position of dynamic human obstacles.
+**HDAL**: A robust perception stack for mobile robots to navigate their surroundings by detecting, localizing, and tracking the position of dynamic human obstacles.
 
 ### Project Overview
-We present HDAL (Human Detection and Localization), an effective robot perception system. HDAL gives delivery robots the capability to detect and localize humans moving in front of them as they move on sidewalks delivering packages to the front doors of houses. The software would help the robot understand its surroundings and provide information to its path planners to choose an appropriate trajectory to move along.
+We present HDAL (Human Detection and Localization), an effective robot perception system. HDAL gives robots the ability to detect and localize humans moving in front of them, in their field of view (FOV). The software would help the robot understand its surroundings and provide information to its path planners to choose an appropriate trajectory to move along.
 
 HDAL is able to accomplish this using its two main components, its object detector and object tracker. While the object detector uses a YOLO v5 model to detect humans in the robot camera's field of view (FOV), the object tracker uses the detector's inferences to find the relative position of the human with respect to the robot's camera using geometric computer vision techniques. To do this, HDAL assumes a known fixed height of the robot's camera relative to the ground.
 
