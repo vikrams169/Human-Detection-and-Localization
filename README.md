@@ -1,17 +1,13 @@
 # Human-Detection-and-Localization
 
 [![HDAL Tests](https://github.com/vikrams169/Human-Detection-and-Localization/actions/workflows/test.yaml/badge.svg)](https://github.com/vikrams169/Human-Detection-and-Localization/actions/workflows/test.yaml)
-[![codecov](https://codecov.io/gh/vinay-lanka/Human-Detection-and-Localization/graph/badge.svg?token=fQ4Z6RwMFH)](https://codecov.io/gh/vinay-lanka/Human-Detection-and-Localization)
+[![codecov](https://codecov.io/gh/vikrams169/Human-Detection-and-Localization/graph/badge.svg?token=QB2Q1sa4sK)](https://codecov.io/gh/vikrams169/Human-Detection-and-Localization)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**HDAL**: A robust perception stack for delivery robots to navigate sidewalks by detecting and localizing human obstacles.
-
-This repository contains the deliverables for the Midterm Project of **Vikram Setty** and **Vinay Lanka**
-
-## Phase 2
+**HDAL**: A robust perception stack for delivery robots to navigate sidewalks by detecting, localizing, and tracking the position of dynamic human obstacles.
 
 ### Project Overview
-We present HDAL (Human Detection and Localization), a perception system for Acme Robotics’ delivery robot group. This project would give delivery robots the capability to detect and localize humans moving in front of them as they move on sidewalks delivering packages to the front doors of houses. The software would help the robot understand its surroundings and provide information to its path planners to choose an appropriate trajectory to move along.
+We present HDAL (Human Detection and Localization), an effective robot perception system. HDAL gives delivery robots the capability to detect and localize humans moving in front of them as they move on sidewalks delivering packages to the front doors of houses. The software would help the robot understand its surroundings and provide information to its path planners to choose an appropriate trajectory to move along.
 
 HDAL is able to accomplish this using its two main components, its object detector and object tracker. While the object detector uses a YOLO v5 model to detect humans in the robot camera's field of view (FOV), the object tracker uses the detector's inferences to find the relative position of the human with respect to the robot's camera using geometric computer vision techniques. To do this, HDAL assumes a known fixed height of the robot's camera relative to the ground.
 
@@ -20,14 +16,14 @@ HDAL has a high level of performance. Even when executed on a laptop webcam usin
 ### About the Authors
 The authors of HDAL are Vikram Setty and Vinay Lanka, both robotics graduate students at the University of Maryland.
 
-Vikram is from Hyderabad, India, and has done his bachelor's and master's degrees with a major in mechanical engineering and a minor in computer science from IIT Ropar. His research interests include perception, navigation, and path planning for robotics and autonomous systems. He is also interested in various areas in artificial intelligence and machine learning, especially computer vision and reinforcement learning.
+**Vikram Setty** is from Hyderabad, India, and has done his bachelor's and master's degrees with a major in mechanical engineering and a minor in computer science from IIT Ropar. His research interests include perception, navigation, and path planning for robotics and autonomous systems. He is also interested in various areas in artificial intelligence and machine learning, especially computer vision and reinforcement learning.
 
-Vinay is from Hyderabad, India, and has done his bachelor's degree majoring in Electronics and Communication Engineering from VIT Vellore. He has two years of work experience in Robotics, having worked as a Robotics Engineer in Newspace Research and Technologies (Defence Aerospace) and as an R&D Engineer in Neoflux. He's interested in the areas of perception and planning of robots and also shares the common interest of Deep Learning and Computer Vision, especially in the field of Robotics.
+**Vinay Lanka** is from Hyderabad, India, and has done his bachelor's degree majoring in Electronics and Communication Engineering from VIT Vellore. He has two years of work experience in Robotics, having worked as a Robotics Engineer in Newspace Research and Technologies (Defence Aerospace) and as an R&D Engineer in Neoflux. He's interested in the areas of perception and planning of robots and also shares the common interest of Deep Learning and Computer Vision, especially in the field of Robotics.
 
 ### AIP Workflow Used
 This project was developed using the Agile Development Process (AIP) along with pair programming (with a driver and navigator), with a focus on test-driven development (TDD). [This](https://docs.google.com/spreadsheets/d/1gvZUOzwOqA3FOt5ZHsv915nfBdFb774tYE5_qxB7flM/edit?usp=sharing) sheet has the product backlog, iteration backlogs, and work log for each task done to develop HDAL. The end of each iteration is even tagged to distinguish each sprint. Further, the link to the sprint planning and review meeting notes devised to overview each iteration sprint to develop HDAL in the most efficient way possible is attached [here](https://docs.google.com/document/d/1QYD2clcA70ukrI24V-6_yM0eB3UJxSPIeIFpcA2wneI/edit?usp=sharing).
 
-The latest (Phase 2) developed UML class and activity diagrams can be found in the `UML/revised-phase-2` directory. The earlier devised UML diagrams as a part of Phase 1 and Phase 0 are available in the `UML/initial-phase-1` and `UML/initial-phase-0` directories. 
+The UML class and activity diagrams used and implemented in this project can be found in the `UML/revised-phase-2` directory. The earlier devised UML diagrams as a part of Phase 1 and Phase 0 are available in the `UML/initial-phase-1` and `UML/initial-phase-0` directories. 
 
 A short video providing a brief overview of the project and the details explaining the AIP process used is embedded below. A direct link to the same can also be found [here](https://www.youtube.com/watch?v=Eoj4YyOxvfU).
 
@@ -147,26 +143,6 @@ This can be self-verified as well by running the following command in the highes
 ```
 
 On running the above command, you should see the same output in the `results/cppcheck_output.txt` file.
-
-## Phase 1
-
-Phase 1 of the project involves building the directory structure, writing the class headers and stubs, and writing preliminary unit tests. It also involves getting GitHub Continuous Integration (CI), Code Coverage (codecov), and a license (MIT) along with their respective badges ready. All this is done using pair programming for test-driven development (TDD) using the Agile Iterative Process (AIP) software development model. 
-
-A short video providing a brief overview of the first phase of the project and the details explaining the AIP process used is embedded below. A direct link to the same can also be found [here](https://www.youtube.com/watch?v=Eoj4YyOxvfU).
-
-[![Video](https://i3.ytimg.com/vi/Eoj4YyOxvfU/maxresdefault.jpg)](https://www.youtube.com/watch?v=Eoj4YyOxvfU)
-
-## Phase 0
-
-Phase 0 involves the proposal for the project, along with information about the AIP model that would be used for software development in the project.
-
-The Phase 0 project report, `proposal/Phase 0 Proposal.pdf` elicits the detailed plan, and vision, along with implementation specifics for the project. All aspects of the standard software plan are covered and explained in the analysis.
-
-The quad chart for this project, `proposal/Phase 0 Quad Chart.pdf` describes the product, stakeholders, capabilities, and measures of success for the project. It is an important aspect of the Agile Iterative Process (AIP) methodology that would be followed throughout the duration of the project.
-
-Further, a short video providing a brief overview of the project and the details explained in the report and quad chart is embedded below. To access the video directly from a link, please click [here](https://www.youtube.com/watch?v=uGA3f2nemRw).
-
-[![Video](https://i3.ytimg.com/vi/uGA3f2nemRw/maxresdefault.jpg)](https://www.youtube.com/watch?v=uGA3f2nemRw)
 
 ### References
 - [YOLO v5 ONNX model source/tutorial](https://github.com/ultralytics/yolov5/releases)
